@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { siteContent } from '@/content/siteContent'
+import { WhatsAppIcon, EmailIcon, LinkedInIcon, InstagramIcon } from '@/components/Icons'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -70,23 +71,25 @@ export function Footer() {
           {/* Contato */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Contato</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <a
                   href={siteContent.contato.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                  className="flex items-center gap-2 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
                 >
-                  WhatsApp: {siteContent.contato.telefone}
+                  <WhatsAppIcon className="w-5 h-5 text-foreground flex-shrink-0" />
+                  <span>WhatsApp: {siteContent.contato.telefone}</span>
                 </a>
               </li>
               <li>
                 <a
                   href={`mailto:${siteContent.contato.email}`}
-                  className="hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                  className="flex items-center gap-2 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
                 >
-                  {siteContent.contato.email}
+                  <EmailIcon className="w-5 h-5 text-foreground flex-shrink-0" />
+                  <span>{siteContent.contato.email}</span>
                 </a>
               </li>
               <li>
@@ -94,11 +97,25 @@ export function Footer() {
                   href={siteContent.contato.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                  className="flex items-center gap-2 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
                 >
-                  LinkedIn
+                  <LinkedInIcon className="w-5 h-5 text-foreground flex-shrink-0" />
+                  <span>LinkedIn</span>
                 </a>
               </li>
+              {siteContent.contato.instagram && siteContent.contato.instagram !== '(Instagram a definir)' && (
+                <li>
+                  <a
+                    href={siteContent.contato.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                  >
+                    <InstagramIcon className="w-5 h-5 text-foreground flex-shrink-0" />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>

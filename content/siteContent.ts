@@ -94,6 +94,7 @@ export const siteContent = {
     email: 'contato@lellinobre.com.br',
     site: 'www.lellinobre.com.br',
     linkedin: 'https://www.linkedin.com/company/lellinobreadvogados/?viewAsMember=true',
+    instagram: '(Instagram a definir)',
     endereco: 'Av. Angélica, 672 - 14º andar, Cj. 141\nHigienópolis, São Paulo - SP, 01228-000',
     horario: '(Horário de atendimento a definir)',
   },

@@ -3,6 +3,7 @@ import { Section } from '@/components/Section'
 import { ContactForm } from '@/components/ContactForm'
 import { LegalDisclaimer } from '@/components/LegalDisclaimer'
 import { siteContent } from '@/content/siteContent'
+import { WhatsAppIcon, EmailIcon, LinkedInIcon, InstagramIcon } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: 'Contato',
@@ -44,18 +45,20 @@ export default function ContatoPage() {
                     href={siteContent.contato.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                    className="flex items-center gap-2 text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
                   >
-                    {siteContent.contato.telefone}
+                    <WhatsAppIcon className="w-5 h-5 flex-shrink-0" />
+                    <span>{siteContent.contato.telefone}</span>
                   </a>
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">E-mail</h3>
                   <a
                     href={`mailto:${siteContent.contato.email}`}
-                    className="text-primary hover:text-primary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                    className="flex items-center gap-2 text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
                   >
-                    {siteContent.contato.email}
+                    <EmailIcon className="w-5 h-5 flex-shrink-0" />
+                    <span>{siteContent.contato.email}</span>
                   </a>
                 </div>
                 <div>
@@ -64,11 +67,26 @@ export default function ContatoPage() {
                     href={siteContent.contato.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                    className="flex items-center gap-2 text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
                   >
-                    Perfil da empresa
+                    <LinkedInIcon className="w-5 h-5 flex-shrink-0" />
+                    <span>Perfil da empresa</span>
                   </a>
                 </div>
+                {siteContent.contato.instagram && siteContent.contato.instagram !== '(Instagram a definir)' && (
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2">Instagram</h3>
+                    <a
+                      href={siteContent.contato.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+                    >
+                      <InstagramIcon className="w-5 h-5 flex-shrink-0" />
+                      <span>Instagram</span>
+                    </a>
+                  </div>
+                )}
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Endereço</h3>
                   <p className="text-muted-foreground whitespace-pre-line">{siteContent.contato.endereco}</p>
