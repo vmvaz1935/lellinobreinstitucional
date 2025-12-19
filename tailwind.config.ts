@@ -31,7 +31,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['Calibri', 'Calibri MS', 'Segoe UI', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        serif: ['Grandview', 'Georgia', 'serif'],
+        display: ['Grandview', 'Georgia', 'serif'],
       },
     },
   },

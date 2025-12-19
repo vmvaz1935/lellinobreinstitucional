@@ -36,11 +36,35 @@
   border-color: rgb(var(--border));
 }
 
+@font-face {
+  font-family: 'Grandview';
+  src: local('Grandview'), local('Grandview-Regular');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grandview';
+  src: local('Grandview Bold'), local('Grandview-Bold');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   color: rgb(var(--foreground));
   background: rgb(var(--background));
   font-feature-settings: 'rlig' 1, 'calt' 1;
   font-family: 'Calibri', 'Calibri MS', 'Segoe UI', sans-serif;
+}
+
+/* Aplicar Grandview em títulos e textos em negrito */
+h1, h2, h3, h4, h5, h6,
+.font-serif,
+.font-display,
+strong, b {
+  font-family: 'Grandview', 'Georgia', serif;
 }
 
 @layer utilities {
