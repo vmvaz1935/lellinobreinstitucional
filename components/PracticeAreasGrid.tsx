@@ -38,7 +38,7 @@ export function PracticeAreasGrid() {
 
       {filteredAreas.length === 0 && (
         <p className="text-center text-muted-foreground py-8">
-          Nenhuma área encontrada com o termo "{searchTerm}".
+          Nenhuma área encontrada com o termo &quot;{searchTerm}&quot;.
         </p>
       )}
     </div>

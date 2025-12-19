@@ -14,22 +14,12 @@
   --muted: 241 245 249;
   --muted-foreground: 100 116 139;
   --border: 226 232 240;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: 15 23 42;
-    --foreground: 248 250 252;
-    --primary: 248 250 252;
-    --primary-foreground: 15 23 42;
-    --secondary: 30 41 59;
-    --secondary-foreground: 248 250 252;
-    --accent: 248 250 252;
-    --accent-foreground: 15 23 42;
-    --muted: 30 41 59;
-    --muted-foreground: 148 163 184;
-    --border: 51 65 85;
-  }
+  /*
+    Mantém o site com o mesmo visual do desktop também no mobile.
+    Evita que o modo escuro do sistema (prefers-color-scheme: dark)
+    troque automaticamente as variáveis e deixe o fundo azul-marinho.
+  */
+  color-scheme: light;
 }
 
 * {
