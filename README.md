@@ -129,6 +129,25 @@ O site segue boas práticas de acessibilidade:
 
 Este projeto é propriedade do Lelli Nobre Advogados.
 
+## 🚀 Deploy no Vercel
+
+O projeto está configurado para deploy automático no Vercel:
+
+1. Acesse [vercel.com](https://vercel.com) e faça login com sua conta GitHub
+2. Clique em "Add New Project"
+3. Importe o repositório `lellinobreinstitucional`
+4. O Vercel detectará automaticamente as configurações do Next.js
+5. Clique em "Deploy"
+
+O site será implantado automaticamente e você receberá uma URL de produção.
+
+### Configurações do Vercel
+
+- **Framework Preset**: Next.js
+- **Build Command**: `npm run build`
+- **Output Directory**: `.next`
+- **Install Command**: `npm install`
+
 ## 📞 Contato
 
 Para dúvidas ou suporte, entre em contato:
