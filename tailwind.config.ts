@@ -30,7 +30,7 @@ const config: Config = {
         border: 'var(--border)',
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        sans: ['Calibri', 'Calibri MS', 'Segoe UI', 'system-ui', 'sans-serif'],
         serif: ['var(--font-serif)', 'Georgia', 'serif'],
       },
     },

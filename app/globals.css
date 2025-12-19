@@ -40,6 +40,7 @@ body {
   color: rgb(var(--foreground));
   background: rgb(var(--background));
   font-feature-settings: 'rlig' 1, 'calt' 1;
+  font-family: 'Calibri', 'Calibri MS', 'Segoe UI', sans-serif;
 }
 
 @layer utilities {
