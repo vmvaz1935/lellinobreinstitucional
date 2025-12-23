@@ -46,16 +46,20 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative w-full h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl">
-            <Image
-              src="/images/matheus-christine.jpg"
-              alt="Mateus Lelli e Christine Nobre"
-              fill
-              className="object-contain object-center"
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          {/* Video */}
+          <div className="relative w-full h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl bg-black">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+              aria-label="Vídeo institucional do Lelli Nobre Advogados"
+            >
+              <source src="/videos/hero-video.mp4" type="video/mp4" />
+              <source src="/videos/hero-video.webm" type="video/webm" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
           </div>
         </div>
       </div>
