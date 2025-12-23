@@ -57,7 +57,6 @@ export function HeroSection() {
               aria-label="Vídeo institucional do Lelli Nobre Advogados"
             >
               <source src="/videos/hero-video.mp4" type="video/mp4" />
-              <source src="/videos/hero-video.webm" type="video/webm" />
               Seu navegador não suporta a tag de vídeo.
             </video>
           </div>
