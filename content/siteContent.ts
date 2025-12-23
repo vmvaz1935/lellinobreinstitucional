@@ -23,6 +23,7 @@ export const siteContent = {
   equipe: {
     mateus: {
       nome: 'Mateus Lelli',
+      foto: '/images/matheus.jpg',
       descricao: [
         'Mateus Lelli é advogado graduado pela Universidade Presbiteriana Mackenzie e pós-graduando em Direito Empresarial pelo IBMEC. Com mais de 10 anos de experiência no contencioso e no consultivo cível, atua de forma estratégica nas áreas de Direito Empresarial, Imobiliário e de Família.',
         'Ao longo de sua trajetória, integrou escritórios de referência em São Paulo, experiência que consolidou sua expertise em soluções jurídicas voltadas tanto à prevenção quanto à resolução de litígios.',
@@ -31,6 +32,7 @@ export const siteContent = {
     },
     christine: {
       nome: 'Christine Nobre',
+      foto: '/images/christine.jpg',
       descricao: [
         'Christine Nobre é advogada com sólida formação acadêmica e ampla experiência na assessoria jurídica de empresas e grupos econômicos. Graduada em Direito pela Universidade de São Paulo (USP), possui especialização em Direito Empresarial pelo Ibmec-SP e concluiu curso internacional na Columbia University, em Nova York, com foco na estruturação de negócios e operações societárias, tendo obtido o título de Master of Laws (LL.M.).',
         'Com mais de 10 anos de atuação na advocacia empresarial, Christine assessora companhias em questões estratégicas relacionadas a contratos empresariais, governança corporativa, reorganizações societárias, fusões e aquisições (M&A), além de planejamento patrimonial e sucessório de alta complexidade.',
