@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.lellinobre.com.br'),
   title: {
     default: 'Lelli Nobre Advogados | Estruturando o seu amanhã',
     template: '%s | Lelli Nobre Advogados',

@@ -35,7 +35,11 @@ export default function EscritorioPage() {
           </h2>
           <div className="bg-muted/50 p-6 rounded-lg space-y-2 text-muted-foreground">
             <p><strong className="text-foreground">Endereço:</strong> {siteContent.contato.endereco}</p>
-            <p><strong className="text-foreground">Horário de atendimento:</strong> {siteContent.contato.horario}</p>
+            <p>
+              <strong className="text-foreground">Horário de atendimento:</strong>{' '}
+              {siteContent.contato.horario.dias} - {siteContent.contato.horario.horas}
+            </p>
+            <p className="text-sm mt-1">{siteContent.contato.horario.descricao}</p>
             <p><strong className="text-foreground">CNPJ/OAB:</strong> (A definir)</p>
           </div>
         </div>
