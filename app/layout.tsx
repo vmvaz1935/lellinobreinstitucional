@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   description: 'Escritório full service de advocacia com excelência técnica e visão estratégica. Atendimento personalizado em todas as áreas do Direito.',
   keywords: ['advocacia', 'advogados', 'escritório jurídico', 'direito empresarial', 'full service'],
   authors: [{ name: 'Lelli Nobre Advogados' }],
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
@@ -18,6 +22,14 @@ export const metadata: Metadata = {
     siteName: 'Lelli Nobre Advogados',
     title: 'Lelli Nobre Advogados | Estruturando o seu amanhã',
     description: 'Escritório full service de advocacia com excelência técnica e visão estratégica.',
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Lelli Nobre Advogados',
+      },
+    ],
   },
   robots: {
     index: true,
