@@ -3,7 +3,7 @@ import { Section } from '@/components/Section'
 import { ContactForm } from '@/components/ContactForm'
 import { LegalDisclaimer } from '@/components/LegalDisclaimer'
 import { siteContent } from '@/content/siteContent'
-import { WhatsAppIcon, EmailIcon, LinkedInIcon, InstagramIcon } from '@/components/Icons'
+import { WhatsAppIcon, EmailIcon, LinkedInIcon, InstagramIcon, ClockIcon } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: 'Contato',
@@ -93,7 +93,14 @@ export default function ContatoPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Horário de Atendimento</h3>
-                  <p className="text-muted-foreground">{siteContent.contato.horario}</p>
+                  <div className="flex items-start gap-2">
+                    <ClockIcon className="w-5 h-5 text-foreground flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-medium text-foreground">{siteContent.contato.horario.dias}</p>
+                      <p className="text-foreground">{siteContent.contato.horario.horas}</p>
+                      <p className="text-sm text-muted-foreground mt-2">{siteContent.contato.horario.descricao}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

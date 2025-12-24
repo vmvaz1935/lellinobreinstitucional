@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { siteContent } from '@/content/siteContent'
-import { WhatsAppIcon, EmailIcon, LinkedInIcon, InstagramIcon } from '@/components/Icons'
+import { WhatsAppIcon, EmailIcon, LinkedInIcon, InstagramIcon, ClockIcon } from '@/components/Icons'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -116,6 +116,16 @@ export function Footer() {
                   </a>
                 </li>
               )}
+              <li>
+                <div className="flex items-start gap-2">
+                  <ClockIcon className="w-5 h-5 text-foreground flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-foreground">{siteContent.contato.horario.dias}</p>
+                    <p className="text-foreground">{siteContent.contato.horario.horas}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{siteContent.contato.horario.descricao}</p>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>

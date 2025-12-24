@@ -96,7 +96,11 @@ export const siteContent = {
     linkedin: 'https://www.linkedin.com/company/lellinobreadvogados/?viewAsMember=true',
     instagram: '(Instagram a definir)',
     endereco: 'Av. Angélica, 672 - 14º andar, Cj. 141\nHigienópolis, São Paulo - SP, 01228-000',
-    horario: '(Horário de atendimento a definir)',
+    horario: {
+      dias: 'Segunda a Domingo',
+      horas: '07h às 21h',
+      descricao: 'Nossa equipe está à disposição todos os dias para atender você com excelência.',
+    },
   },
   legal: {
     disclaimer: 'Conteúdo informativo. Não constitui aconselhamento jurídico.',
