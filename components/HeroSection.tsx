@@ -47,7 +47,7 @@ export function HeroSection() {
           </div>
 
           {/* Video */}
-          <div className="relative w-full h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-2xl bg-black">
+          <div className="relative w-full max-w-[1920px] mx-auto rounded-lg overflow-hidden shadow-2xl bg-black" style={{ aspectRatio: '16/9' }}>
             <video
               autoPlay
               loop
@@ -55,6 +55,8 @@ export function HeroSection() {
               playsInline
               className="w-full h-full object-cover"
               aria-label="Vídeo institucional do Lelli Nobre Advogados"
+              width={1920}
+              height={1080}
             >
               <source src="/videos/hero-video.mp4" type="video/mp4" />
               Seu navegador não suporta a tag de vídeo.
